@@ -1,13 +1,281 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Karla', sans-serif;
+  /* font-family: 'Markazi Text', serif;
+  font-family: 'Playfair Display', serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+
+}
+.header {
+  background-color: white;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header ul > li {
+  display: inline;
+  margin: 0 15px 0 15px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.nav-logo {
+  margin-left: 15px;
+
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.hero {
+  height: 420px;
+  background-color: #495E57;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: none;
+}
+.hero h2 {
+  margin-top: -20px;
+  padding-top: 0px;
+  color: white;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+.hero p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-right: 30px;
+  color: white;
+}
+.hero button {
+  margin-top: 40px;
+  background-color: #F4CE14;
+  border: 1px solid #F4CE14;
+  border-radius: 12px;
+  padding: 10px 24px 10px 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.hero img {
+  height: 350px;
+  border-radius: 3%;
+}
+.highlights {
+  height: 800px;
+  background-color: white;
+  padding-bottom: 25px;
+}
+.highlights .heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+.heading button {
+  margin-left: 20px;
+  background-color: #F4CE14;
+  border: 1px solid #F4CE14;
+  border-radius: 12px;
+  padding: 10px 24px 10px 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.highlights .specials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.specials-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border: 1px solid #495e579a;
+  margin: 20px;
+  border-radius: 0% 0% 3% 3%;
+}
+.specials-card img {
+  padding: 0;
+  margin: 0;
+}
+.card-heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-heading h2 {
+  padding-right: 20px;
+}
+.card-heading h3 {
+  padding-left: 20px;
+}
+.specials-card p {
+  padding: 20px;
+}
+.card-order{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-order img {
+  padding-left: 5px;
+  width: 20px;
+}
+.testimonials {
+  background-color: #495E57;
+  padding-bottom: 50px;
+}
+.testimonials-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: white;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid white;
+  margin: 20px;
+  border-radius: 5%;
+  background-color: white;
+}
+.testimonial-card .person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.testimonial-card .person img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.testimonial-card h4 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.testimonial-card p {
+  padding: 20px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.aboutUs img {
+  height: 350px;
+  margin: 30px;
+  border-radius: 3%;
+}
+.aboutUs .info {
+  width: 600px;
+}
+.aboutUs h1 {
+  font-family: 'Markazi Text', serif;
+  color: #495E57;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: none;
+}
+.aboutUs h2 {
+  margin-top: -20px;
+  padding-top: 0px;
+  color: #F4CE14;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.footer {
+  height: 360px;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer img {
+  height: 320px;
+  width: auto;
+  border-radius: 3%;
+}
+.footer ul {
+  list-style: none;
+  margin: 20px;
+
+}
+.footer li {
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;;
+}
+#footer-heading {
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+  font-size: 24px;
+}
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  min-height: 39.8vh;
 }
