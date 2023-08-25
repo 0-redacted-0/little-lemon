@@ -1,9 +1,11 @@
 import './App.css'
+import './components/BookingForm.css'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Soon from './components/Soon'
 import Reserve from './components/Reserve'
+import Confirmed from './components/Confirmed'
 
 import {Routes, Route} from 'react-router-dom'
 
@@ -35,6 +37,7 @@ function App() {
         <Route path="/" element={<Main specials={specials} testimonials={testimonials}/>}/>
         <Route path="/reserve" element={<Reserve/>}/>
         <Route path="/coming-soon" element={<Soon/>}/>
+        <Route path="/confirmed" element={<Confirmed/>}/>
       </Routes>
       <Footer/>
     </div>

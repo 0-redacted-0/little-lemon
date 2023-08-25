@@ -279,3 +279,25 @@ code {
   flex-direction: column;
   min-height: 39.8vh;
 }
+.confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  min-height: 39.8vh;
+}
+.confirm h1 {
+  background-color: #495E57;
+  color: white;
+  padding: 150px 75px 150px 75px;
+  border: 1px #495E57 solid;
+  border-radius: 5%;
+}
+.reservations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
